@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  python:
+    image: registry.gitlab.com/vladtroinich/jupyter_app:latest
+    restart: "${RESTART}"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ${WORKDIR}:/home/ds
+    network_mode: bridge
