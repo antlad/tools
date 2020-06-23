@@ -10,8 +10,6 @@ services:
       - jupyter-vol:/source
     ports:
       - ${JUPYTER_PORT}:8888
-    volumes:
-      - ${WORKDIR}:/source
     network_mode: bridge
 
 volumes:
