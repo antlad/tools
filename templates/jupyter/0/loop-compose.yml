@@ -1,6 +1,6 @@
 .catalog:
   name: Jupyter
-  version: Jupyter-custom
+  version: latest
   uuid: jupiter-1
   questions:
   - variable: WORKDIR
@@ -9,6 +9,12 @@
     required: true
     default: "/source"
     type: string
+  - variable: JUPYTER_PORT
+    description: 'Jupyter port'
+    label: 'Port:'
+    required: true
+    default: 8888
+    type: int
   - variable: RESTART
     description: 'Application restart option: no, always, on-failure'
     label: 'Restart:'
