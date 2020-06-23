@@ -8,4 +8,4 @@ services:
     tty: true
     volumes:
       - ${WORKDIR}:/source
-    network_mode: host
+    network_mode: bridge
