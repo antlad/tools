@@ -7,5 +7,5 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ${WORKDIR}:/home/ds
-    network_mode: bridge
+      - ${WORKDIR}:/source
+    network_mode: host

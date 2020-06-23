@@ -1,13 +1,13 @@
 .catalog:
   name: Jupyter
   version: Jupyter-custom
-  uuid: jupiter-0
+  uuid: jupiter-1
   questions:
   - variable: WORKDIR
     description: 'Jupyter work dir'
     label: 'Jupyter work dir:'
     required: true
-    default: "~/"
+    default: "/source"
     type: string
   - variable: RESTART
     description: 'Application restart option: no, always, on-failure'
